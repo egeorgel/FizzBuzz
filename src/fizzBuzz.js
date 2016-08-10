@@ -1,7 +1,6 @@
 /*
 *	Version 1
 */
-
 function multipleOf3RetrunFizz(number) {
 	return (number%3 == 0 ? "Fizz" : number.toString() );
 }
@@ -21,7 +20,6 @@ function return100numbers() {
 /*
 *	Version 2
 */
-
 function multipleOf3And5RetrunFizzBuzz(number) {
 	if (number.toString() !== multipleOf3RetrunFizz(number) &&
 		number.toString() !== multipleOf5RetrunBuzz(number) ) {
