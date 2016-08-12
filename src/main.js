@@ -1,12 +1,34 @@
-var FizzBizz = require("./fizzBuzz.js");
+const FizzBizz = require("./fizzBuzz.js");
+const Readline = require('readline')
 
-console.log("	VERSION 1");
-console.log(" ");
-FizzBizz.log(FizzBizz.return100numbers());
 
-console.log(" ");
-console.log(" ");
+let fizzMultiplen = "",
+	buzzMultiple = "";
 
-console.log("	VERSION 2");
-console.log(" ");
-FizzBizz.log(FizzBizz.return100numbersV2());
+const readerFizz = Readline.createInterface({
+											  input: process.stdin,
+											  output: process.stdout
+											});
+readerFizz.question('Enter FIZZ multiple (enter if nonne) : ? ', (input) => {
+  fizzMultiplen = input;
+  readerFizz.close();
+});
+
+readerFizz.on('close', (input) => {
+   const readerBuzz = Readline.createInterface({
+												  input: process.stdin,
+												  output: process.stdout
+												});
+	readerBuzz.question('Enter BUZZ multiple (enter if nonne) : ? ', (input) => {
+	  buzzMultiple = input;
+	  readerBuzz.close();
+	});
+});
+/*
+
+*/
+
+console.log(" fizzMultiplen ", fizzMultiplen);
+console.log("buzzMultiple", buzzMultiple);
+
+

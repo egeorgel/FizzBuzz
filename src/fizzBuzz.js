@@ -5,6 +5,11 @@
 ////////////////////////////
 class FizzBuzz {
 	
+	constructor(numberFizz = 3, numberBuzz = 5) {
+		this.numberFizz = numberFizz;
+		this.numberBuzz = numberBuzz;
+	}
+	
 	////////////////////////
 	////				////
 	////	VERSION 1	////
@@ -17,7 +22,7 @@ class FizzBuzz {
 	 *	@output String
 	 */
 	multipleOf3RetrunFizz(number) {
-		return (number%3 == 0 ? "Fizz" : number.toString() );
+		return (number%this.numberFizz == 0 ? "Fizz" : number.toString() );
 	}
 	
 	/**
@@ -27,7 +32,7 @@ class FizzBuzz {
 	 *	@output String
 	 */
 	multipleOf5RetrunBuzz(number) {
-		return (number%5 == 0 ? "Buzz" : number.toString() );
+		return (number%this.numberBuzz == 0 ? "Buzz" : number.toString() );
 	}
 	
 	/**
@@ -120,6 +125,5 @@ class FizzBuzz {
 	}
 }
 
-let fizzBuzz = new FizzBuzz();
-module.exports = fizzBuzz;
+module.exports = FizzBuzz;
 
