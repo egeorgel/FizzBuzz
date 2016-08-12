@@ -15,6 +15,7 @@ readerFizz.question('Enter FIZZ multiple (enter if nonne) : ? ', (input) => {
 });
 
 readerFizz.on('close', (input) => {
+	
    const readerBuzz = Readline.createInterface({
 												  input: process.stdin,
 												  output: process.stdout
@@ -23,12 +24,20 @@ readerFizz.on('close', (input) => {
 	  buzzMultiple = input;
 	  readerBuzz.close();
 	});
+	
+	readerBuzz.on('close', (input) => {
+		let fizzModulo = 3 , buzzModulo = 5;
+		if (parseInt(fizzMultiplen) !== NaN && parseInt(fizzMultiplen) !== 0) {
+			fizzModulo = parseInt(fizzMultiplen);
+		}
+		if (parseInt(buzzMultiple) !== NaN && parseInt(buzzMultiple) !== 0) {
+			buzzModulo = parseInt(buzzMultiple) 
+		}
+		let fizzBizz = new FizzBizz(fizzModulo, buzzModulo);
+		fizzBizz.log(fizzBizz.return100numbersV2());
+	});
+	
 });
-/*
 
-*/
-
-console.log(" fizzMultiplen ", fizzMultiplen);
-console.log("buzzMultiple", buzzMultiple);
 
 
