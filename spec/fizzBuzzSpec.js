@@ -1,5 +1,7 @@
+var FizzBizz = require("../src/fizzBuzz.js");
+
 describe("FIZZ BUZZ TEST ", function() {
-	var FizzBizz = require("../src/fizzBuzz.js");
+	
 	////////////////////////////
 	////					////
 	////	VERSION 2		////
