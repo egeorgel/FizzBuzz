@@ -1,7 +1,8 @@
-////
-////	VERSION 1
-////
-
+////////////////////////
+////				////
+////	VERSION 1	////
+////				////
+////////////////////////
 /**
  *	Can transform a number in a string, if it's multiple of 3 return Fizz
  * 	else number in string
@@ -37,10 +38,11 @@ function return100numbers() {
 	return result;
 }
 
-////
-////  Version 2
-////
-
+////////////////////////
+////				////
+////	VERSION 2	////
+////				////
+////////////////////////
 /**
  *	Can transform a number in a string, if it's multiple of 5 && 3 return FizzBuzz
  *	else number in string
@@ -77,6 +79,12 @@ function return100numbersV2() {
 	return result;
 }
 
+////////////////////////////////
+////						////
+////	HELPER 				////
+////	VERSION 1 & 2		////
+////						////
+////////////////////////////////
 /**
  *	helper for Version 1 and 2
  *	transform number in to string, 
@@ -94,4 +102,12 @@ function helper(index) {
 		return number;
 	}
 	return multipleOf5RetrunBuzz(index);
+}
+
+/**
+ *	Print array
+ *	@input [String]
+ */
+function log(array) {
+	console.log(array.toString());
 }
