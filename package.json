@@ -1,0 +1,19 @@
+{
+  "name": "Fizz-buzz",
+  "version": "0.0.1",
+  "description": "Fizz Buzz kata js",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node spec",
+    "start": "node src/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/egeorgel/FizzBuzz"
+  },
+  "author": "Edgar Georgel",
+  "license": "N/A",
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
