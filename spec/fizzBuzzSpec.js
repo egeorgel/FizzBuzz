@@ -9,26 +9,26 @@ describe("FIZZ BUZZ TEST ", function() {
 	////					////
 	////////////////////////////
 	it("Should print Fizz whene a number is multiple of 3", function() {
-		expect( fizzBuzz.multipleOf3RetrunFizz(3) ).toEqual("Fizz");
-		expect( fizzBuzz.multipleOf3RetrunFizz(9) ).toEqual("Fizz");
-		expect( fizzBuzz.multipleOf3RetrunFizz(12) ).toEqual("Fizz");
+		expect( fizzBuzz.multipleOfXRetrunFizz(3) ).toEqual("Fizz");
+		expect( fizzBuzz.multipleOfXRetrunFizz(9) ).toEqual("Fizz");
+		expect( fizzBuzz.multipleOfXRetrunFizz(12) ).toEqual("Fizz");
 	})
 	
 	it("Should print number whene it's not multiple of 3 or 5", function() {
-		expect( fizzBuzz.multipleOf3RetrunFizz(4) ).toEqual("4");
-		expect( fizzBuzz.multipleOf3RetrunFizz(2) ).toEqual("2");
-		expect( fizzBuzz.multipleOf3RetrunFizz(13) ).toEqual("13");
+		expect( fizzBuzz.multipleOfXRetrunFizz(4) ).toEqual("4");
+		expect( fizzBuzz.multipleOfXRetrunFizz(2) ).toEqual("2");
+		expect( fizzBuzz.multipleOfXRetrunFizz(13) ).toEqual("13");
 		
-		expect( fizzBuzz.multipleOf5RetrunBuzz(2) ).toEqual("2");
-		expect( fizzBuzz.multipleOf5RetrunBuzz(4) ).toEqual("4");
-		expect( fizzBuzz.multipleOf5RetrunBuzz(13) ).toEqual("13");
+		expect( fizzBuzz.multipleOfYRetrunBuzz(2) ).toEqual("2");
+		expect( fizzBuzz.multipleOfYRetrunBuzz(4) ).toEqual("4");
+		expect( fizzBuzz.multipleOfYRetrunBuzz(13) ).toEqual("13");
 
 	})
 	
 	it("Should print Buzz whene a number is multiple of 5", function() {
-		expect( fizzBuzz.multipleOf5RetrunBuzz(5) ).toEqual("Buzz");
-		expect( fizzBuzz.multipleOf5RetrunBuzz(10) ).toEqual("Buzz");
-		expect( fizzBuzz.multipleOf5RetrunBuzz(20) ).toEqual("Buzz");
+		expect( fizzBuzz.multipleOfYRetrunBuzz(5) ).toEqual("Buzz");
+		expect( fizzBuzz.multipleOfYRetrunBuzz(10) ).toEqual("Buzz");
+		expect( fizzBuzz.multipleOfYRetrunBuzz(20) ).toEqual("Buzz");
 	})
 	
 	it("Should print number 1 to 100 with Fizz or Buzz", function() {
@@ -48,8 +48,8 @@ describe("FIZZ BUZZ TEST ", function() {
 	////					////
 	////////////////////////////
 	it("Should print FizzBuzz whene a number is multiple of 3 and 5", function() {
-		expect( fizzBuzz.multipleOf3And5RetrunFizzBuzz(15) ).toEqual("FizzBuzz");
-		expect( fizzBuzz.multipleOf3And5RetrunFizzBuzz(15) ).toEqual("FizzBuzz");
+		expect( fizzBuzz.multipleOfXAndYRetrunFizzBuzz(15) ).toEqual("FizzBuzz");
+		expect( fizzBuzz.multipleOfXAndYRetrunFizzBuzz(15) ).toEqual("FizzBuzz");
 	})
 	
 	it("Should print number 1 to 100 with Fizz or Buzz FizzBuzz", function() {
@@ -70,19 +70,19 @@ describe("FIZZ BUZZ TEST ", function() {
 	////////////////////////////
 	it("Should print Fizz whene a number is multiple of 4", function(){
 		var fizz7Buzz = new FizzBuzz(4, 5);
-		expect( fizz7Buzz.multipleOf3RetrunFizz(4) ).toEqual("Fizz");
-		expect( fizz7Buzz.multipleOf3RetrunFizz(16) ).toEqual("Fizz");
-		expect( fizz7Buzz.multipleOf3RetrunFizz(20) ).toEqual("Fizz");
-		expect( fizz7Buzz.multipleOf3RetrunFizz(2) ).toEqual("2");
-		expect( fizz7Buzz.multipleOf3RetrunFizz(6) ).toEqual("6");
+		expect( fizz7Buzz.multipleOfXRetrunFizz(4) ).toEqual("Fizz");
+		expect( fizz7Buzz.multipleOfXRetrunFizz(16) ).toEqual("Fizz");
+		expect( fizz7Buzz.multipleOfXRetrunFizz(20) ).toEqual("Fizz");
+		expect( fizz7Buzz.multipleOfXRetrunFizz(2) ).toEqual("2");
+		expect( fizz7Buzz.multipleOfXRetrunFizz(6) ).toEqual("6");
 	})
 	
 	it("Should print Buzz whene a number is multiple of 3", function() {
 		var fizzBuzz3 = new FizzBuzz(4, 3);
-		expect( fizzBuzz3.multipleOf5RetrunBuzz(3) ).toEqual("Buzz");
-		expect( fizzBuzz3.multipleOf5RetrunBuzz(9) ).toEqual("Buzz");
-		expect( fizzBuzz3.multipleOf5RetrunBuzz(12) ).toEqual("Buzz");
-		expect( fizzBuzz3.multipleOf3RetrunFizz(2) ).toEqual("2");
+		expect( fizzBuzz3.multipleOfYRetrunBuzz(3) ).toEqual("Buzz");
+		expect( fizzBuzz3.multipleOfYRetrunBuzz(9) ).toEqual("Buzz");
+		expect( fizzBuzz3.multipleOfYRetrunBuzz(12) ).toEqual("Buzz");
+		expect( fizzBuzz3.multipleOfXRetrunFizz(2) ).toEqual("2");
 	})
 	
 	it("Should print number 1 to 100 with Fizz or Buzz FizzBuzz => FIZZ 2, BUZZ 7", function() {

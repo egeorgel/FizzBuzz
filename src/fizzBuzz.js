@@ -21,7 +21,7 @@ class FizzBuzz {
 	 *	@input int 
 	 *	@output String
 	 */
-	multipleOf3RetrunFizz(number) {
+	multipleOfXRetrunFizz(number) {
 		return (number%this.numberFizz == 0 ? "Fizz" : number.toString() );
 	}
 	
@@ -31,7 +31,7 @@ class FizzBuzz {
 	 *	@input int 
 	 *	@output String
 	 */
-	multipleOf5RetrunBuzz(number) {
+	multipleOfYRetrunBuzz(number) {
 		return (number%this.numberBuzz == 0 ? "Buzz" : number.toString() );
 	}
 	
@@ -61,9 +61,9 @@ class FizzBuzz {
 	 *	@input int 
 	 *	@output String
 	 */
-	multipleOf3And5RetrunFizzBuzz(number) {
-		if (number.toString() !== this.multipleOf3RetrunFizz(number) &&
-			number.toString() !== this.multipleOf5RetrunBuzz(number) ) {
+	multipleOfXAndYRetrunFizzBuzz(number) {
+		if (number.toString() !== this.multipleOfXRetrunFizz(number) &&
+			number.toString() !== this.multipleOfYRetrunBuzz(number) ) {
 			return "FizzBuzz";
 		}
 		return number.toString();
@@ -80,7 +80,7 @@ class FizzBuzz {
 	return100numbersV2() {
 		var result = [];
 		for (var i = 1; i <= 100; i++) {
-			var number = this.multipleOf3And5RetrunFizzBuzz(i);
+			var number = this.multipleOfXAndYRetrunFizzBuzz(i);
 			if (number !== i.toString()) {
 				// if it was multiple of 3 and 5
 				result.push(number);
@@ -109,11 +109,11 @@ class FizzBuzz {
 	 *	@output String
 	 */
 	helper(index) {
-		var number = this.multipleOf3RetrunFizz(index);
+		var number = this.multipleOfXRetrunFizz(index);
 		if (number !== index.toString() ) {	
 			return number;
 		}
-		return this.multipleOf5RetrunBuzz(index);
+		return this.multipleOfYRetrunBuzz(index);
 	}
 	
 	/**
