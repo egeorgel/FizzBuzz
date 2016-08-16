@@ -36,6 +36,7 @@ You have to make sure that you have the last version of Node, run :
 brew update
 brew upgrade node
 ```
+The node version is 6.2.2 and above
 
 ### Installing
 
